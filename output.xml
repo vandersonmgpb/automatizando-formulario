@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221019 17:34:25.559" rpa="false" schemaversion="3">
+<suite id="s1" name="CursoRobot01" source="C:\CursoUdemy\ExerciciosRobot\EX01\CursoRobot01.robot">
+<test id="s1-t1" name="Cenario 1: preencher formulario" line="30">
+<kw name="abrir navegador e acessar o site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://itera-qa.azurewebsites.net/home/automation</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221019 17:34:25.707" level="INFO">Opening browser 'firefox' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<msg timestamp="20221019 17:34:25.708" level="INFO">Firefox driver log is always forced to to: C:\CursoUdemy\ExerciciosRobot\EX01\geckodriver-2.log</msg>
+<status status="PASS" starttime="20221019 17:34:25.706" endtime="20221019 17:34:34.051"/>
+</kw>
+<status status="PASS" starttime="20221019 17:34:25.706" endtime="20221019 17:34:34.051"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>Jose da Silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 17:34:34.052" level="INFO">Typing text 'Jose da Silva' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20221019 17:34:34.052" endtime="20221019 17:34:34.114"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_phone}</arg>
+<arg>(83)991251233</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 17:34:34.114" level="INFO">Typing text '(83)991251233' into text field 'id:phone'.</msg>
+<status status="PASS" starttime="20221019 17:34:34.114" endtime="20221019 17:34:34.134"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_email}</arg>
+<arg>testedeemail@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 17:34:34.135" level="INFO">Typing text 'testedeemail@email.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20221019 17:34:34.134" endtime="20221019 17:34:34.156"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>0246810</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 17:34:34.156" level="INFO">Typing text '0246810' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20221019 17:34:34.156" endtime="20221019 17:34:34.172"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${textarea_address}</arg>
+<arg>rua Eu sou do Brasil</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221019 17:34:34.172" level="INFO">Typing text 'rua Eu sou do Brasil' into text field 'id:address'.</msg>
+<status status="PASS" starttime="20221019 17:34:34.172" endtime="20221019 17:34:34.190"/>
+</kw>
+<status status="PASS" starttime="20221019 17:34:34.052" endtime="20221019 17:34:34.190"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221019 17:34:34.192" level="INFO">Clicking element 'name:submit'.</msg>
+<status status="PASS" starttime="20221019 17:34:34.192" endtime="20221019 17:34:34.456"/>
+</kw>
+<status status="PASS" starttime="20221019 17:34:34.192" endtime="20221019 17:34:34.456"/>
+</kw>
+<kw name="fechar navegador">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221019 17:34:34.458" endtime="20221019 17:34:35.070"/>
+</kw>
+<status status="PASS" starttime="20221019 17:34:34.457" endtime="20221019 17:34:35.070"/>
+</kw>
+<status status="PASS" starttime="20221019 17:34:25.705" endtime="20221019 17:34:35.070"/>
+</test>
+<status status="PASS" starttime="20221019 17:34:25.560" endtime="20221019 17:34:35.071"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="CursoRobot01">CursoRobot01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
